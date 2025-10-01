@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Registre - Cordova</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="loginUser" placeholder="Usuari" required>
+        <input type="password" id="loginPass" placeholder="Contrasenya" required>
+        <button type="submit">Entrar</button>
+    </form>
+
+    <h2>Registre</h2>
+    <form id="registerForm">
+        <input type="email" id="regEmail" placeholder="Correu electrònic" required>
+        <input type="text" id="regUser" placeholder="Nom d'usuari" required>
+        <input type="password" id="regPass" placeholder="Contrasenya" required>
+        <input type="password" id="regPass2" placeholder="Repeteix contrasenya" required>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <div id="message" class="msg"></div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
