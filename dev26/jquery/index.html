@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <title>Prompt</title>
+
+    </head>
+    <body>
+        <p><span id="nom"></span></p>
+
+        <button onclick="mostrarPrompt()">pruebame</button>
+
+        <script> 
+
+        function mostrarPrompt() {
+            const pepa = prompt("pruebame");
+
+             var jquery_elem = $("<li>"+pepa+"</li>");
+             $("body").append(jquery_elem);
+        }
+    </script>
+    </body>
+</html>
