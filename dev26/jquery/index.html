@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <title>Prompt</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Prompt</title>
+</head>
+<body>
+    <p><span id="nom"></span></p>
 
-    </head>
-    <body>
-        <p><span id="nom"></span></p>
+    <ul id="miLista"></ul>
 
-        <button onclick="mostrarPrompt()">pruebame</button>
+    <button onclick="mostrarPrompt()">pruebame</button>
 
-        <script> 
-
+    <script> 
         function mostrarPrompt() {
             const pepa = prompt("pruebame");
 
-             var jquery_elem = $("<li>"+pepa+"</li>");
-             $("body").append(jquery_elem);
+            var jquery_elem = $("<li>"+pepa+"</li>");
+            $("#miLista").append(jquery_elem);
         }
     </script>
-    </body>
+</body>
 </html>
